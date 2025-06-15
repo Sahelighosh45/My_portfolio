@@ -488,6 +488,159 @@ footer {
   50% { transform: scale(1.02); border-color: #f06292; }
   100% { transform: scale(1); opacity: 1; box-shadow: 0 0 25px rgba(240, 98, 146, 0.4); }
 }
+/* ------------------------------------- */
+/* RESPONSIVE DESIGN FOR SMALL SCREENS */
+/* ------------------------------------- */
+@media screen and (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-right {
+    flex: unset;
+    padding: 0 1rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-line {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-line {
+    font-size: 0.95rem;
+  }
+
+  .about-box p {
+    font-size: 0.95rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+
+  .patent-card, .hackathon-box {
+    padding: 1.5rem;
+  }
+
+  .contact-box a {
+    font-size: 0.95rem;
+  }
+
+  .footer-text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  .about-image {
+    max-width: 180px;
+  }
+
+  .about-title {
+    font-size: 1.5rem;
+  }
+
+  .about-line {
+    font-size: 0.9rem;
+  }
+
+  .skill-badge {
+    font-size: 0.85rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .project-card {
+    padding: 1rem;
+  }
+
+  .project-tags span {
+    font-size: 0.75rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-box {
+    padding: 1.2rem;
+  }
+
+  .contact-box span {
+    font-size: 1.2rem;
+  }
+
+  .contact-box a {
+    font-size: 0.9rem;
+  }
+
+  .footer-text {
+    font-size: 0.9rem;
+  }
+
+  .view-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  #closeModal {
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+  }
+
+  .modal-content {
+    max-width: 95%;
+    max-height: 90%;
+  }
+}
+
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
